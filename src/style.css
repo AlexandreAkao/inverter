@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', cursive, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+#word-input {
+  color: rgb(48, 48, 48);
+  text-align: center;
+  width: 100%;
+  font-size: 100px;
+  border: 0;
+  position: relative;
+  height: 120px;
+  background-color: transparent;
+  border-bottom: 1px solid #00000030;
+}
+
+#word-inverted {
+  color: rgba(48, 48, 48, 0.4);
+  filter: blur(4px);
+  text-align: center;
+  width: 100%;
+  max-width: 100% !important;
+  font-size: 100px;
+  height: 120px;
+  transform: rotateX(180deg);
+  user-select: none;
+  overflow: hidden;
+}
